@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "529505025227",
+    "firebase_url": "https://logistics-now-306cb-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "logistics-now-306cb",
+    "storage_bucket": "logistics-now-306cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529505025227:android:8875648fd91abba163ef4e",
+        "android_client_info": {
+          "package_name": "com.example.logisticsnow"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoQ8FnWNmGjpdm40Tcg5faerBLURqn0yk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
