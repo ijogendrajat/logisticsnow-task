@@ -9,15 +9,14 @@ Future<LorriserviceModel> fetchLocation(
     required int limit,
     required String searchFields}) async {
   try {
-    final Uri uri =
-        Uri.parse('https://lorriservice.azurefd.net/api/autocomplete')
-            .replace(queryParameters: {
-      'suggest': suggest,
-      'limit': limit.toString(),
-      'searchFields': searchFields,
-    });
+    var headers = {
+      'X-RapidAPI-Key': 'fbb733a09bmshf581e14bf3e3fe5p114580jsn4dd2800df595',
+      'X-RapidAPI-Host': 'cors-proxy4.p.rapidapi.com',
+    };
+    final Uri uri = Uri.parse(
+        'https://cors-proxy4.p.rapidapi.com/?url=https%3A%2F%2Florriservice.azurefd.net%2F%2Fapi%2Fautocomplete%3Fsuggest%3D$suggest%26limit%3D20%26searchFields%3Dnew_locations');
 
-    final response = await http.get(uri);
+    final response = await http.get(uri, headers: headers);
 
     if (response.statusCode == 200) {
       //debugPrint(response.body);
